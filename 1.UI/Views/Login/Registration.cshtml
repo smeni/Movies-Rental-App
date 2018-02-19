@@ -1,0 +1,40 @@
+﻿@*Registration Screen*@
+
+
+@model _1.UI.Models.RegisterInfo
+
+<head>
+    <link href="~/Content/Designer/LoginStyle.css" rel="stylesheet" />
+</head>
+
+<div class="logindiv">
+    <form class="form-container" action="/Login/Create">
+
+        <div class="form-title"><h2>Registration</h2></div>
+
+        <div class="form-title">Name</div>
+        <input class="form-field" type="text" name="NickName" /><br />
+
+        <div class="form-title">Email</div>
+        <input class="form-field" type="text" name="Email" /><br />
+
+        <div class="form-title">Password</div>
+        <input class="form-field" type="text" name="Password" /><br />
+
+        <div class="submit-container">
+            <input class="submit-button" type="submit" value="Create" />
+        </div>
+
+        <div>
+            <span>עדיין אינך רשום?   <a href="/Login/Create/">להרשמה לחץ כאן</a></span>
+        </div>
+        <br />
+
+        <div>
+            @Html.ActionLink("חזרה לעמוד הבית", "Index", "Movie")
+        </div>
+    </form>
+</div>
+
+<br />
+

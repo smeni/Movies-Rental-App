@@ -1,0 +1,20 @@
+﻿
+/*stars*/
+.Stars {
+    display: inline-block;
+    /*float: right;*/
+    width: 93px;
+    height: 16px;
+    background: url(http://img.zap.co.il/imgs/newui/Star-Gray.PNG) no-repeat;
+    direction: rtl;
+    margin-left: 10px;
+}
+
+    .Stars span {
+        display: inline-block;
+        height: 16px;
+        max-width: 93px;
+        /*float: right;*/
+        background: url(http://img.zap.co.il/imgs/newui/Star-Yellow.PNG) no-repeat right transparent;
+        direction: rtl;
+    }

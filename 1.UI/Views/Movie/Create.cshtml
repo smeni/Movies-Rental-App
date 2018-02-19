@@ -1,0 +1,89 @@
+﻿
+
+
+<div ng-app="">
+
+    <h1>הוספת סרט חדש</h1>
+
+    <form name="myForm" action="/Movie/Add" method="post">
+
+        <span>Picture</span>
+        <div>
+            <input type="text" name="Picture" ng-model="pic" required>
+            <span ng-show="myForm.Picture.$valid">Enter the image address.</span>
+        </div><br />
+
+
+        <span>MovieName</span>
+        <div>
+            <input type="text" name="MovieName" ng-model="name" required>
+            <span ng-show="myForm.MovieName.$valid">The name is required.</span>
+        </div><br />
+
+        <span>CategoryID</span>
+        <div>
+            <input type="number" name="CategoryID" ng-model="catID" required>
+            <span ng-show="myForm.CategoryID.$valid">Enter 1 for Action, 2 for Drama, 3 for Comedy.</span>
+        </div><br />
+
+
+        <span>Ranking</span>
+        <div>
+            <input type="number" name="Ranking" ng-model="ranking" required>
+            <span ng-show="myForm.Ranking.$valid">Enter 1 for a low rating - 5 for the highest rating.</span>
+        </div><br />
+
+        <span>MovieTrailer</span>
+        <div>
+            <input type="text" name="MovieTrailer" ng-model="trailer" required>
+            <span ng-show="myForm.MovieTrailer.$valid">Insert YouTube link.</span>
+        </div><br />
+
+        <span>Level</span>
+        <div>
+            <input type="number" name="Level" ng-model="level" required>
+        </div><br />
+
+        <input type="submit" name="submit" value="Enter" ng-disabled="myForm.$invalid" />
+
+
+    </form>
+
+    <link href="~/Content/Designer/AddNewMovie.css" rel="stylesheet" />
+    <script src="~/Scripts/angular.min.js"></script>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
